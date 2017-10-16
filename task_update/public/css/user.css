@@ -1,0 +1,9 @@
+/*-----------user welcome-------------*/
+.wrapp-user {width: 90%; height: 320px; margin: auto; border: solid 1px #131313 }
+.welcome {width: 100%; height: 50px; text-align: center}
+.welcome span {font-size: 68px; font-weight: bold}
+.info {width: 100%; height: auto; padding-left: 190px; padding-top: 90px;}
+.label {color: #E27912; font-size: 25px;}
+
+.table-hover tr  {border-bottom: solid 0.6px #888686}
+.table-hover tr td  {border-bottom: solid 0.2px #A5A3A3; padding-left: 40px;}

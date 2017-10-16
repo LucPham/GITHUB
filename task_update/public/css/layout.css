@@ -1,0 +1,20 @@
+/*-------------layout-------------*/
+body {margin: 0; padding: 0; background: #E7E5E5}
+.container {width: 100%; height: auto; margin: 0; padding: 0;}
+nav {width: 100%; height: 50px; background: #131313; color: #fff; margin-bottom: 50px;}
+nav .brand {width: 30%; height: 100%; float: left; padding-left: 32px;}
+nav .brand a {line-height: 50px; text-decoration: none; color: #fff; font-weight: bold; font-size: 32px;}
+nav .link {width: 60%; height: 100%; float: right}
+nav ul li {list-style: none; float: left; margin-left: 30px;}
+nav ul li a {text-decoration: none; color: #fff; font-weight: bold}
+
+/*-------------form-------------*/
+.add-wrapp {width: 90%; height: auto; margin: auto; padding: 15px; background: #fff}
+.form-wrapp {width: 80%; height: auto; margin: auto;  border: solid 0.2px #C1BABA; margin-bottom: 50px;}
+.form {margin:auto; margin-top: 60px; margin-bottom: 60px; width: 60%; }
+.ip {display: block; margin: auto; width: 420px; height: 40px; margin-top: 20px; color: grey; padding: 4px; font-size: 18px; border: solid 0.2px #D4D3D3;}
+.radio {margin-left: 213px;}
+.add-btn {display: block; margin: auto; background: #68c62d; color: #fff; font-weight: bold; cursor: pointer; width: 428px; height: 40px; margin-top: 20px; padding: 4px; font-size: 18px; border: solid 0.2px #D4D3D3;}
+.err-text {width: 100%; height: 40px; padding: 12px 40px; color: #fff; background: #CD8D8D; font-weight: bold}
+.success-text {width: 100%; height: 40px; padding: 12px 40px; color: #fff; background: #0D980A; font-weight: bold}
+.err {margin: 20px 4px;}
