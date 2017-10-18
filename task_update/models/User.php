@@ -5,8 +5,6 @@
 	use Model\Db\database;
 
 	class User  extends database{
-		
-
 		public function insert($data=array())
 		{	
 			$this->stateMent = $this->pdo->prepare("INSERT INTO `user` (`username`,`password`,`email`,`admin`) values (?,?,?,?)");
@@ -44,5 +42,3 @@
 			return false;
 		} 
 	}
-
-?>
