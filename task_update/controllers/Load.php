@@ -1,6 +1,5 @@
 <?php 
 	/***
-	
 	 * Class Load
 	 * With namespace Controller\Loads	
 	 * This class use to get value input form (text, password, email, checkbox)
@@ -33,7 +32,6 @@
 			}
 			return require_once($this->path);
 		}
-
 /*--------------------------------------------------------------------*/
 
 		// Load all value input form
@@ -43,16 +41,13 @@
 		{
 			if (isset($feild) && !empty($feild)) {
 				foreach ($feild as $name) {
-
 					$this->data[$name] = $_POST[$name];
 				}
 				return $this->data;
 			} 
 			return false;
 		}
-
 /*--------------------------------------------------------------------*/
-
 		// Load all value in put form and if any feil is empty 
 		// Return empty field name 
 		public function loadFormInputErrors(array $feild = array())
@@ -60,7 +55,6 @@
 			if (isset($feild) && !empty($feild)) {
 				foreach ($feild as $name) {
 					if (isset($_POST[$name]) && $_POST[$name] == '') {
-						
 						$this->formErr[$name] = 'Feild: '. $name . ' is empty!';
 					}
 					if (array_key_exists($name, $_POST) == false) {

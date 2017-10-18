@@ -25,19 +25,16 @@
 				$this->data = $data;
 			}
 		}
-
 		// Set info of user
 		public function setInfo(&$data = array())
 		{
 			$this->data = $data;
 		}
-
 		// Return user info as array
 		public function getInfo()
 		{
 			return $this->data;
 		}
-
 		// Login
 		public function logIn()
 		{
