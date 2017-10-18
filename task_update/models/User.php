@@ -1,8 +1,8 @@
 <?php 
-	namespace UserModel;
+	namespace Model\Db;
 	require_once("database.php");
 
-	use DB\database;
+	use Model\Db\database;
 
 	class User  extends database{
 		
@@ -14,21 +14,21 @@
 
 			return $this->pdo->lastInsertId();
 		}
-		public function check_email($email) {
+		public function checkEmail($email) {
 			$this->stateMent = $this->pdo->prepare("SELECT email FROM user WHERE email='".$email."'");
 			$this->stateMent->execute();
 			if ($this->stateMent->rowCount() > 0) 
 				return true;
 			return false;
 		}
-		public function get_pw($email) {
+		public function getPw($email) {
 			$this->stateMent = $this->pdo->prepare("SELECT id,email,password FROM user WHERE email='".$email."'");
 			$this->stateMent->execute();
 			if ($this->stateMent->rowCount() > 0) 
 				return $this->stateMent->fetch();
 			return false;
 		}
-		public function user_info($id) {
+		public function userInfo($id) {
 		
 			$this->stateMent = $this->pdo->prepare("SELECT * FROM user WHERE id='".$id."'");
 			$this->stateMent->execute();
@@ -36,7 +36,7 @@
 				return $this->stateMent->fetch();
 			return false;
 		}
-		public function check_admin($id) {
+		public function checkAdmin($id) {
 			$this->stateMent = $this->pdo->prepare("SELECT id FROM user WHERE id=".$id." and admin = 1");
 			$this->stateMent->execute();
 			if ($this->stateMent->rowCount() > 0) 

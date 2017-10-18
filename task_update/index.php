@@ -2,8 +2,8 @@
 	require_once("controllers/Management.php");
 	require_once("controllers/User.php");
 
-	use Manage\Management;
-	use User\User;
+	use Controller\Manage\Management;
+	use Controller\Users\User;
 
 	
 

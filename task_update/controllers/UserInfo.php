@@ -2,17 +2,18 @@
 	/***
 	
 	 * Class UserInfo is interface class
-	 * With User namespace
+	 
+	 * With namespace Controller\Users
 	
 	 * This class use to declare method function of users info
 
 		
 	**/
-	namespace User;
+	namespace Controller\Users;
+	
 	interface UserInfo
 	{
 		public function setInfo();
 		public function getInfo();
 	}
 
-?>

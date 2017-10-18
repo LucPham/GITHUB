@@ -2,17 +2,17 @@
 	/***
 	
 	 * Class UserAction is interface class
-	 * With User namespace
+	 * With namespace Controller\Users
 	
 	 * This class use to declare method function of users action
 
 		
 	**/
-	namespace User;
+	namespace Controller\Users;
+	
 	interface UserAction
 	{
 		public function logIn($input = array());
 		public function logOut();
 	}
 
-?>

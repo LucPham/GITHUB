@@ -2,26 +2,29 @@
 	/***
 	
 	 * Class Load
-	 * With namespace Load	
+	 * With namespace Controller\Loads	
 	 * This class use to get value input form (text, password, email, checkbox)
 	 * Return data input
-		
+	 * Update on Github	
 	**/
-	namespace Load;
+	namespace Controller\Loads;
+	
 	require_once("ConnectDb.php");
 
-	use ConnectDb\ConnectDb;
+	use Controller\Db\ConnectDb;
 
 	class Load extends ConnectDb
 	{
-		protected $path, $data, $formErr = array();
+		protected $path;
+		protected $data;
+		protected $formErr = array();
 
 		// Load file as path
 
 		// Set a exactly argument as path is obligatory
 
 		// Varible data is option, path plus
-		public function load($path, &$data = array())
+		public function load($path, array &$data = array())
 		{
 			if (isset($data)) {
 				$this->data = $data;
@@ -36,7 +39,7 @@
 		// Load all value input form
 		// Field is a array hold name of input feild to get value
 		// Return data get;
-		public function load_form_input($feild = array())
+		public function loadFormInput(array $feild = array())
 		{
 			if (isset($feild) && !empty($feild)) {
 				foreach ($feild as $name) {
@@ -52,7 +55,7 @@
 
 		// Load all value in put form and if any feil is empty 
 		// Return empty field name 
-		public function load_form_input_errors($feild = array())
+		public function loadFormInputErrors(array $feild = array())
 		{
 			if (isset($feild) && !empty($feild)) {
 				foreach ($feild as $name) {
@@ -70,4 +73,3 @@
 		}
 	}
 
-?>

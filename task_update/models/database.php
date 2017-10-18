@@ -1,5 +1,5 @@
 <?php  
-   namespace DB;
+   namespace Model\Db;
    
 	class database {
 		protected $pdo='';

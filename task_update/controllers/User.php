@@ -2,18 +2,19 @@
 	/***
 	
 	 * Class User implements from UserInfo
-	 * With User namespace
+	 * With namespace Controller\Users
 	
 	 * This class use to define method function of users
 	 * Use as a argument in some cases
 		
 	**/
-	namespace User;
+	namespace Controller\Users;
+	
 	require("UserInfo.php");
 	require("UserAction.php");
 
-	use User\UserAction;
-	use User\UserInfo;
+	use Controller\Users\UserAction;
+	use Controller\Users\UserInfo;
 	
 	class User implements UserInfo
 	{
@@ -50,4 +51,3 @@
 		}
 	}
 
-?>

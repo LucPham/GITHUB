@@ -2,16 +2,16 @@
 	/***
 	
 	 * Class ConnectDb
-	 * With namespace ConnectDb	
+	 * With namespace Controller\Db	
 	 * This class include to class User
 	 * Set a varible $UserModel to declare class User in models directory in @Constructor function;
 		
 	**/
+	namespace Controller\Db;
 
-	namespace ConnectDb;
 	require_once("models/User.php");
 
-	use UserModel\User;
+	use Model\Db\User;
 	
 	class ConnectDb 	
 	{
@@ -22,4 +22,3 @@
 		}
 	}
 
-?>
